@@ -329,7 +329,7 @@ class CplxConvTranspose1d(CplxConvTransposeNd):
                 "by `CplxConvTranspose1d`"
             )
         output_padding = self._output_padding(
-            input, output_size, self.stride, self.padding, self.kernel_size
+            input, output_size, self.stride, self.padding, self.kernel_size, 2
         )
 
         return cplx.conv_transpose1d(
@@ -385,7 +385,7 @@ class CplxConvTranspose2d(CplxConvTransposeNd):
                 "by `CplxConvTranspose2d`"
             )
         output_padding = self._output_padding(
-            input, output_size, self.stride, self.padding, self.kernel_size
+            input, output_size, self.stride, self.padding, self.kernel_size, 2
         )
 
         return cplx.conv_transpose2d(
